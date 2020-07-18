@@ -1,0 +1,262 @@
+
+ <!DOCTYPE HTML>
+ <html>
+ <head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-143787541-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-143787541-1');
+    </script>
+
+    <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-9400534095151985",
+            enable_page_level_ads: true
+        });
+    </script> -->
+
+ <title>
+                 Brawlhalla Player Stats | About           </title>
+
+
+
+<!--<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">-->
+
+ <link rel="shortcut icon" href="https://brawlhallastats.herokuapp.com/favicon.ico">
+ 
+ <!-- <link href="https://brawlhallastats.herokuapp.com/assets/plugins/tablesaw/dist/tablesaw.css" rel="stylesheet" type="text/css" /> -->
+ <!-- <link href="https://brawlhallastats.herokuapp.com/assets/plugins/bootstrap-sweetalert/sweetalert2.min.css" rel="stylesheet" type="text/css" />
+ <link href="https://brawlhallastats.herokuapp.com/assets/plugins/nvd3/build/nv.d3.min.css" rel="stylesheet" type="text/css" /> -->
+
+ <link href="https://brawlhallastats.herokuapp.com/assets/plugins/datatables/jquery.dataTables.min.css" rel="stylesheet" type="text/css" />
+ <link href="https://brawlhallastats.herokuapp.com/assets/plugins/datatables/buttons.bootstrap.min.css" rel="stylesheet" type="text/css" />
+ <link href="https://brawlhallastats.herokuapp.com/assets/plugins/datatables/fixedHeader.bootstrap.min.css" rel="stylesheet" type="text/css" />
+ <link href="https://brawlhallastats.herokuapp.com/assets/plugins/datatables/responsive.bootstrap.min.css" rel="stylesheet" type="text/css" />
+ <link href="https://brawlhallastats.herokuapp.com/assets/plugins/datatables/scroller.bootstrap.min.css" rel="stylesheet" type="text/css" />
+ 
+ <link href="https://brawlhallastats.herokuapp.com/assets/plugins/tablesaw/dist/tablesaw.css" rel="stylesheet" type="text/css" />
+
+ <style>
+        #leaderboard-table tr td:nth-child(1) {
+            width: 1%;
+        }
+    </style>
+ <link href="https://brawlhallastats.herokuapp.com/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+ <link href="https://brawlhallastats.herokuapp.com/assets/css/core.css" rel="stylesheet" type="text/css">
+ <link href="https://brawlhallastats.herokuapp.com/assets/css/icons.css" rel="stylesheet" type="text/css">
+ <link href="https://brawlhallastats.herokuapp.com/assets/css/components.css" rel="stylesheet" type="text/css">
+ <link href="https://brawlhallastats.herokuapp.com/assets/css/pages.css" rel="stylesheet" type="text/css">
+ <link href="https://brawlhallastats.herokuapp.com/assets/css/menu.css" rel="stylesheet" type="text/css">
+ <link href="https://brawlhallastats.herokuapp.com/assets/css/responsive.css" rel="stylesheet" type="text/css">
+ <link href="https://brawlhallastats.herokuapp.com/assets/css/_main.css" rel="stylesheet" type="text/css">
+ <script src="https://brawlhallastats.herokuapp.com/assets/js/modernizr.min.js" type="566ead401d4a289a66320f2a-text/javascript"></script>
+ <link rel="stylesheet" href="https://brawlhallastats.herokuapp.com/assets/css/material-design-iconic-font.min.css">
+
+
+ <!--<link rel="stylesheet" href="assets/css/materialdesignicons.min.css" type="text/css">-->
+ <!--<script src = "scripts.js" >
+     
+ </script>
+ -->
+ <!--[if lt IE 9]>
+             <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+             <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+             <![endif]-->
+           
+ <meta charset="utf-8" /><meta property="og:type" content="website" /><meta property="og:site_name" content="ROFEL" /><meta property="og:title" content="ROFEL" /><meta property="og:locale" content="en_US" /><meta property="og:description" content="Website used to view Player, Guild, etc... statistics for Brawlhalla." /><meta property="keywords" content="ROFEL,Brawlhalla,Stats,Statistics" /><meta name="viewport" content="width=device-width,initial-scale=1" /><meta name="author" content="ROFEL" /><meta name="twitter:card" content="summary" /><meta name="twitter:site" content="@ruprep444" /><meta name="twitter:creator" content="@ruprep444" /><meta name="twitter:title" content="ROFEL" /><meta name="twitter:description" content="Website used to view Player, Guild, etc... statistics for Brawlhalla." /><meta name="twitter:image" content="https://brawlhallastats.herokuapp.com/ROFEL.png" /><meta name="description" content="Website used to view Player, Guild, etc... statistics for Brawlhalla." /><meta name="keywords" content="ROFEL,Brawlhalla,Stats,Statistics" /> </head>
+ <body class="fixed-left">
+ 
+ <div id="wrapper">
+ 
+ <div class="topbar">
+ 
+ <div class="topbar-left">
+ <div class="text-center">
+ <a href="https://brawlhallastats.herokuapp.com" class="logo"><img src="https://brawlhallastats.herokuapp.com/favicon.ico" height="18px" /> <span>BrawlhallaStats</span> </a>
+ </div>
+ </div>
+ 
+ <div class="navbar navbar-default" role="navigation"><div class="container"><div class=""><div class="pull-left"><button class="button-menu-mobile open-left waves-effect"><i class="zmdi zmdi-menu"></i></button><span class="clearfix"></span></div><ul class="nav navbar-nav hidden-xs"></ul></div></div></div> </div>
+ 
+ 
+ <div class="left side-menu">
+ <div class="sidebar-inner slimscrollleft">
+  <div id="sidebar-menu">
+ <ul><li class="menu-title">Brawlhalla</li><li class="has_sub"><a href="javascript:;" class="waves-effect waves-primary"><i class="zmdi zmdi-account"></i><span> Player </span><span class="menu-arrow"><i class="zmdi zmdi-chevron-right"></i></span></a><ul class="list-unstyled"><li><a href="https://brawlhallastats.herokuapp.com">Stats</a></li>
+    <li><a href="#">Weapons</a></li>
+        <!--
+        <li><a href="#">Calculator</a></li>
+        <li><a href="#">Friends</a></li>
+        <li><a href="#">Achievements</a></li>
+        -->
+    </ul></li>
+    <li><a href="/clan" class="waves-effect waves-primary"><i class="zmdi zmdi-accounts"></i><span> Clan Stats </span></a></li>
+    <li><a href="https://brawlhallastats.herokuapp.com/leaderboards" class="waves-effect waves-primary"><i class="zmdi zmdi-view-list-alt"></i><span> Leaderboards </span></a></li>
+    <li><a href="/legends" class="waves-effect waves-primary"><i class="zmdi zmdi-face"></i><span> Legends </span></a></li>
+    <li class="menu-title">Miscellaneous</li>
+    <li><a href="https://brawlhallastats.herokuapp.com/totals" class="waves-effect waves-primary"><i class="zmdi zmdi-chart"></i><span> Totals </span></a></li>
+    <li class="active"><a href="#" class="waves-effect waves-primary active"><i class="zmdi zmdi-info"></i><span> About </span></a></li>
+    <li><a href="/privacy" class="waves-effect waves-primary"><i class="zmdi zmdi-lock"></i><span> Privacy Policy </span></a></li>
+    <!--<li><a href="#" class="waves-effect waves-primary"><i class="zmdi zmdi-camera"></i><span> Generators </span></a></li>
+    <li><a href="#" class="waves-effect waves-primary"><i class="zmdi zmdi-time-countdown"></i><span> Boosters </span></a></li>
+    <li><a href="#" class="waves-effect waves-primary"><i class="zmdi zmdi-minus-circle"></i><span> Watchdog Stats </span></a></li>
+    <li class="menu-title">Tools</li><li><a href="/tools/color/" class="waves-effect waves-primary"><i class="fa fa-paint-brush"></i><span> MC Color Tester </span></a></li></ul> <div class="clearfix"></div>
+    -->
+</div>
+ <div class="clearfix"></div>
+ </div>
+ 
+ </div>
+ 
+ 
+ 
+ 
+ <div class="content-page">
+ 
+    <div class="content">
+        <div class="container">
+            
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="page-title-box">
+                        
+                        <h4 class="page-title">About BrawlhallaStats.com</h4>
+                    </div>
+                </div>
+            </div>
+        
+            
+
+            <div class="row" id="playerStats">
+                <div class="col-lg-3 b-0 p-0">
+                    <div class="col-lg-12">
+                        <div class="card-box m-b-10">
+                            <h3 class="m-t-0 header-title">What is this site?</h3>
+
+                            <hr>
+                        
+                            <span id="aboutPage">BrawlhallaStats.com is a standard statistics website for Brawlhalla.<br />It has a minimalist design and is extremely easy to use.<br />
+                            This website is still in early beta so there might be bugs wandering around.  You can report them if you want in the official <a href="https://discord.gg/PceXSSf">Discord server!</a><br /><br />
+                            <b>I am consistently adding more features as time goes on.</b></span>
+                        
+
+                        </div>
+                    </div>
+
+            
+                    <div class="col-lg-12">
+                        <div class="card-box m-b-10">
+                            <h4 class="m-t-0 header-title">FAQ</h4>
+                            <hr>
+                            <span ><b>Where is this data coming from?</b><br /> - Most of the raw data are coming from the <a href="http://dev.brawlhalla.com">Official Brawlhalla API</a>.  All figures are calculated using the data given from that API.</span>
+                            <hr>
+                            <span ><b>How can I get in contact with the developer?</b><br /> - You can contact me by emailing contact@brawlhallastats.com or by joining the Discord server.</span>
+                            <hr>
+                            <span ><b>How often does the data get refreshed?</b><br /> - The speed of new data or updated data depends on the Brawlhalla API.  It is usually within a couple minutes.</span>
+                            <hr>
+                            <span ><b>How do I find my Brawlhalla ID?</b><br /> - You can find your Brawlhalla ID in the top right corner of the inventory in-game.</span>
+                            <hr>
+                            <span ><b>Why do the Global Stats not seem accurate?</b><br /> - Because of the API Rate limit, I cannot search through every player and grab their total damage and update it every second.  My solution is to just update global stats when a player has been searched.  If you want to "pulse" a player's stats to the global statistics, just search them up and global stats will update.</span>
+                        
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 b-0 p-0">
+                    <div class="col-lg-12">
+                        <div class="card-box m-b-10">
+                            <h4 class="m-t-0 header-title">Future Updates</h4>
+                            <hr>
+                            <span ><b>More Global Statistics</b><br /> - Such as Total Damage Dealt "Globally" meaning the cumulative amount dealt from all players in the database.  For this, I'm going to have to use my own server database and sync players up as they search (call it a "pulse") and update my own server database then.</span>
+                   
+                        </div>
+                    </div>
+
+                    <div class="col-lg-12">
+                        <div class="card-box m-b-10">
+                            <h4 class="m-t-0 header-title">Contributors</h4>
+                            <hr>
+                            <span ><b>BrawlhallaStats.com</b> was created by a single person, Rephael.<br /></span>
+                            <span >Follow Rephael on <a href="https://twitter.com/RupRep444">Twitter</a> & <a href="https://www.youtube.com/user/RupRep444/">YouTube</a>.<br /></span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            
+        </div>
+        
+        
+</div>
+
+
+
+ </div>
+ </div>
+ 
+ <footer class="footer">
+ <span>2019 © All Rights Reserved - Developed by Rephael Congmon</span>
+ <span>- Powered by <a href="https://brawlhallastats.herokuapp.com" target="_blank">BrawlhallaStats</a></span>
+ </footer>
+ </div>
+ 
+ 
+ 
+ <script type="566ead401d4a289a66320f2a-text/javascript">
+                 var resizefunc = [];
+             </script>
+ 
+
+<script>
+
+
+</script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+ <script src="https://brawlhallastats.herokuapp.com/assets/js/jquery.min.js" type="566ead401d4a289a66320f2a-text/javascript"></script>
+ <script src="https://brawlhallastats.herokuapp.com/assets/js/bootstrap.min.js" type="566ead401d4a289a66320f2a-text/javascript"></script>
+ <script src="https://brawlhallastats.herokuapp.com/assets/js/detect.js" type="566ead401d4a289a66320f2a-text/javascript"></script>
+ <script src="https://brawlhallastats.herokuapp.com/assets/js/fastclick.js" type="566ead401d4a289a66320f2a-text/javascript"></script>
+ <script src="https://brawlhallastats.herokuapp.com/assets/js/jquery.slimscroll.js" type="566ead401d4a289a66320f2a-text/javascript"></script>
+ <script src="https://brawlhallastats.herokuapp.com/assets/js/jquery.blockUI.js" type="566ead401d4a289a66320f2a-text/javascript"></script>
+ <script src="https://brawlhallastats.herokuapp.com/assets/js/waves.js" type="566ead401d4a289a66320f2a-text/javascript"></script>
+ <script src="https://brawlhallastats.herokuapp.com/assets/js/wow.min.js" type="566ead401d4a289a66320f2a-text/javascript"></script>
+ <script src="https://brawlhallastats.herokuapp.com/assets/js/jquery.nicescroll.js" type="566ead401d4a289a66320f2a-text/javascript"></script>
+ <script src="https://brawlhallastats.herokuapp.com/assets/js/jquery.scrollTo.min.js" type="566ead401d4a289a66320f2a-text/javascript"></script>
+ <script src="https://brawlhallastats.herokuapp.com/assets/plugins/switchery/switchery.min.js" type="566ead401d4a289a66320f2a-text/javascript"></script>
+ 
+ <script src="https://brawlhallastats.herokuapp.com/assets/js/jquery.core.js" type="566ead401d4a289a66320f2a-text/javascript"></script>
+ <script src="https://brawlhallastats.herokuapp.com/assets/js/jquery.app.js" type="566ead401d4a289a66320f2a-text/javascript"></script>
+ <script src="https://brawlhallastats.herokuapp.com/assets/js/_main.js" type="566ead401d4a289a66320f2a-text/javascript"></script>
+ <script>
+     console.log("Hello totals!");
+
+ </script>
+
+<script src="https://brawlhallastats.herokuapp.com/assets/plugins/datatables/jquery.dataTables.min.js" type="209b54fc97458f3ccce79bd1-text/javascript"></script>
+<script src="https://brawlhallastats.herokuapp.com/assets/plugins/datatables/dataTables.bootstrap.js" type="209b54fc97458f3ccce79bd1-text/javascript"></script>
+<script src="https://brawlhallastats.herokuapp.com/assets/plugins/datatables/dataTables.buttons.min.js" type="209b54fc97458f3ccce79bd1-text/javascript"></script>
+<script src="https://brawlhallastats.herokuapp.com/assets/plugins/datatables/buttons.bootstrap.min.js" type="209b54fc97458f3ccce79bd1-text/javascript"></script>
+<script src="https://brawlhallastats.herokuapp.com/assets/plugins/datatables/jszip.min.js" type="209b54fc97458f3ccce79bd1-text/javascript"></script>
+<script src="https://brawlhallastats.herokuapp.com/assets/plugins/datatables/pdfmake.min.js" type="209b54fc97458f3ccce79bd1-text/javascript"></script>
+<script src="https://brawlhallastats.herokuapp.com/assets/plugins/datatables/vfs_fonts.js" type="209b54fc97458f3ccce79bd1-text/javascript"></script>
+<script src="https://brawlhallastats.herokuapp.com/assets/plugins/datatables/buttons.html5.min.js" type="209b54fc97458f3ccce79bd1-text/javascript"></script>
+<script src="https://brawlhallastats.herokuapp.com/assets/plugins/datatables/buttons.print.min.js" type="209b54fc97458f3ccce79bd1-text/javascript"></script>
+<script src="https://brawlhallastats.herokuapp.com/assets/plugins/datatables/dataTables.fixedHeader.min.js" type="209b54fc97458f3ccce79bd1-text/javascript"></script>
+<script src="https://brawlhallastats.herokuapp.com/assets/plugins/datatables/dataTables.keyTable.min.js" type="209b54fc97458f3ccce79bd1-text/javascript"></script>
+<script src="https://brawlhallastats.herokuapp.com/assets/plugins/datatables/dataTables.responsive.min.js" type="209b54fc97458f3ccce79bd1-text/javascript"></script>
+<script src="https://brawlhallastats.herokuapp.com/assets/plugins/datatables/responsive.bootstrap.min.js" type="209b54fc97458f3ccce79bd1-text/javascript"></script>
+<script src="https://brawlhallastats.herokuapp.com/assets/plugins/datatables/dataTables.scroller.min.js" type="209b54fc97458f3ccce79bd1-text/javascript"></script>
+
+<script>
+
+</script>
+ </div>
+ <script src="https://ajax.cloudflare.com/cdn-cgi/scripts/a2bd7673/cloudflare-static/rocket-loader.min.js" data-cf-settings="566ead401d4a289a66320f2a-|49" defer=""></script></body>
+ </html>
+ 

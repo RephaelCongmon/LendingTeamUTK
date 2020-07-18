@@ -1,0 +1,247 @@
+[data-theme="dark"] {
+  background-color: #111 !important;
+  color: #eee;
+  transition: 0.3s;
+}
+
+[data-theme="dark"] html {
+  background-color: #111111 !important;
+  transition: 0.3s;
+}
+
+[data-theme="dark"] .bg-light {
+  background-color: #333 !important;
+  transition: 0.3s;
+}
+
+[data-theme="dark"] .bg-white {
+  background-color: #000 !important;
+  transition: 0.3s;
+}
+
+[data-theme="dark"] .bg-black {
+  background-color: #eee !important;
+  transition: 0.3s;
+}
+
+[data-theme="dark"] .topbar {
+  background-color: #2196f3 !important;
+  color: #2a1e37 !important;
+  transition: 0.3s;
+}
+
+[data-theme="dark"] .btn {
+  background-color: #2196f3 !important;
+  border: 1px solid #2196f3 !important;
+  color: #2a1e37 !important;
+  transition: 0.3s;
+}
+
+[data-theme="dark"] .page-title-box {
+  background-color: #171717 !important;
+  color: #cac5bc;
+  transition: 0.3s;
+}
+
+[data-theme="dark"] .page-title {
+  background-color: #171717 !important;
+  color: #cac5bc;
+  transition: 0.3s;
+}
+
+[data-theme="dark"] .header-title {
+  background-color: #171717 !important;
+  color: #cac5bc;
+  transition: 0.3s;
+}
+
+[data-theme="dark"] .portlet-title {
+  background-color: #171717 !important;
+  color: #cac5bc;
+  transition: 0.3s;
+}
+
+[data-theme="dark"] .card {
+  background-color: #171717 !important;
+  border: 1px solid #191919 !important;
+  transition: 0.3s;
+}
+
+[data-theme="dark"] .card-box {
+  background-color: #171717 !important;
+  border: 1px solid #191919 !important;
+  color: #cac5bc;
+  transition: 0.3s;
+}
+
+[data-theme="dark"] .portlet {
+  background-color: #171717 !important;
+  border: 1px solid #191919 !important;
+  color: #cac5bc;
+  transition: 0.3s;
+}
+
+[data-theme="dark"] .portlet-heading {
+  background-color: #171717 !important;
+  border: 1px solid #191919 !important;
+  color: #cac5bc;
+  transition: 0.3s;
+}
+
+[data-theme="dark"] .portlet-default {
+  background-color: #171717 !important;
+  border: 1px solid #191919 !important;
+  color: #cac5bc;
+  transition: 0.3s;
+}
+
+[data-theme="dark"] .portlet-body {
+  background-color: #171717 !important;
+  border: 1px solid #191919 !important;
+  color: #cac5bc;
+  transition: 0.3s;
+}
+
+[data-theme="dark"] .form-control {
+  background-color: #191919 !important;
+  color: #cac5bc;
+  border: 1px #1c1c1c !important;
+  transition: 0.3s;
+}
+
+[data-theme="dark"] .table-striped>tbody>tr:nth-child(odd)>td, 
+.table-striped>tbody>tr:nth-child(odd)>th {
+  background-color: #161616;
+  border: 1px #2f2f2f;
+  color: #cac5bc;
+  transition: 0.3s;
+}
+
+[data-theme="dark"] .table-striped>tbody>tr:nth-child(even)>td, 
+.table-striped>tbody>tr:nth-child(even)>th{
+  background-color: #131313;
+  color: #cac5bc;
+  transition: 0.3s;
+}
+
+[data-theme="dark"] table.dataTable {
+  border: none !important;
+  transition: 0.3s;
+}
+
+[data-theme="dark"] table.dataTable thead th{
+  border: 1px solid #222222 !important; 
+}
+
+[data-theme="dark"] table.dataTable thead td {
+  border: 1px solid #222222 !important; 
+}
+
+[data-theme="dark"] table.dataTable tfoot th{
+  border: 1px solid #222222 !important;
+  transition: 0.3s;
+}
+
+[data-theme="dark"] table.dataTable tfoot td {
+  border: 1px solid #222222 !important;
+  transition: 0.3s;
+}
+
+[data-theme="dark"] table.dataTable.row-border tbody th {
+  border: 1px solid #222222 !important;
+  transition: 0.3s;
+}
+
+[data-theme="dark"] table.dataTable.row-border tbody td {
+  border: 1px solid #222222 !important;
+  transition: 0.3s;
+}
+
+[data-theme="dark"] table.dataTable.display tbody th {
+  border: 1px solid #222222 !important;
+  transition: 0.3s;
+}
+
+[data-theme="dark"] table.dataTable.display tbody td {
+  border: 1px solid #222222 !important;
+  transition: 0.3s;
+}
+
+[data-theme="dark"] table.dataTable.cell-border tbody th {
+  border: 1px solid #222222 !important;
+  transition: 0.3s;
+  }
+
+  [data-theme="dark"] table.dataTable.cell-border tbody td {
+    border: 1px solid #222222 !important;
+    transition: 0.3s;
+    }
+
+[data-theme="dark"] table.dataTable.cell-border tbody tr th:first-child{
+  border: 1px solid #222222 !important; 
+  transition: 0.3s;}
+
+  [data-theme="dark"] table.dataTable.cell-border tbody tr td:first-child {
+  border: 1px solid #222222 !important; 
+  transition: 0.3s;}
+
+[data-theme="dark"] table.dataTable.no-footer {
+  border: 1px solid #222222 !important; 
+  transition: 0.3s;}
+
+[data-theme="dark"] .dataTables_wrapper.no-footer {
+  border: 1px solid #222222 !important; 
+  transition: 0.3s;}
+
+  [data-theme="dark"] .dataTables_scrollBody {
+    border: 1px solid #222222 !important; 
+    transition: 0.3s;}
+
+[data-theme="dark"] .footer {
+  background-color: #222222 !important;
+  color: #7b7b7b;
+  transition: 0.3s;
+}
+
+[data-theme="dark"] .side-menu {
+  background-color: #111111 !important;
+  color: #7b7b7b;
+  transition: 0.3s;
+  border-right: 1px solid #222222 !important;
+}
+
+[data-theme="dark"] .menu-title {
+  
+  color: #dbdbdb;
+  transition: 0.3s;
+  border-right: none !important;
+}
+
+/* [data-theme="dark"] .card-header {
+  background-color: #444 !important;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+[data-theme="dark"] .card-footer {
+  background-color: #444 !important;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+} */
+
+/* [data-theme="dark"] .modal-content {
+  background-color: #303030 !important;
+  border: 1px solid #444;
+  transition: 0.3s;
+}
+
+[data-theme="dark"] .breadcrumb {
+  background-color: #444 !important;
+  transition: 0.3s;
+
+} */
+
+[data-theme="dark"] .breadcrumb a{
+  background-color: #fff !important;
+  transition: 0.3s;
+
+}
+
