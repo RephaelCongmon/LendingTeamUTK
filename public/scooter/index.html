@@ -41,6 +41,7 @@
             width: 1%;
         }
     </style>
+
  <link href="https://lendingteamutk.herokuapp.com/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
  <link href="https://lendingteamutk.herokuapp.com/assets/css/core.css" rel="stylesheet" type="text/css">
  <link href="https://lendingteamutk.herokuapp.com/assets/css/icons.css" rel="stylesheet" type="text/css">
@@ -65,6 +66,7 @@
  <div class="topbar-left">
  <div class="text-center">
  <a href="https://lendingteamutk.herokuapp.com" class="logo"><img src="https://lendingteamutk.herokuapp.com/favicon.ico" height="18px" /> <span>BrawlhallaStats</span> </a>
+
  </div>
  </div>
  
@@ -82,6 +84,7 @@
     <li><a href="/legends" class="waves-effect waves-primary"><i class="zmdi zmdi-face"></i><span> Legends </span></a></li>
     <li class="menu-title">Miscellaneous</li>
     <li><a href="https://lendingteamutk.herokuapp.com/totals" class="waves-effect waves-primary"><i class="zmdi zmdi-chart"></i><span> Totals </span></a></li>
+
     <li><a href="/about" class="waves-effect waves-primary"><i class="zmdi zmdi-info"></i><span> About </span></a></li>
     <li><a href="/privacy" class="waves-effect waves-primary"><i class="zmdi zmdi-lock"></i><span> Privacy Policy </span></a></li>
   
@@ -99,9 +102,6 @@
  <div class="content">
  <div class="container">
  
-
-
-    
  <div class="row">
     <div class="col-sm-12">
         <div class="page-title-box">
@@ -110,8 +110,6 @@
         </div>
     </div>
  </div>
- 
-
  </div>
  </div>
  
@@ -120,13 +118,11 @@
  <span>- Powered by <a href="https://lendingteamutk.herokuapp.com" target="_blank"> InfoKnoxville </a></span>
  </footer>
  </div>
- 
+
  <script>
     var resizefunc = [];
 </script>
  
-<script>
-
 function getUrlParameter(name) {
     name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
     var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
@@ -140,6 +136,7 @@ function numberWithCommas(x) {
 
     var urlParams = new URLSearchParams(window.location.search);
     console.log("Does clan page have parameters? ", urlParams.has('clan'));
+
     console.log("Parameter = ", getUrlParameter('clan'));
 
     if (urlParams.has('clan') && getUrlParameter('clan') !== ''){
@@ -150,6 +147,7 @@ function numberWithCommas(x) {
         document.querySelector('#playerLoading').style.display = "inline";
 
         fetch('https://lendingteamutk.herokuapp.com/api/clan?clan=' + getUrlParameter('clan') )
+
         .then(response => response.json())
         .then(results => {
             console.log("Clan results = ", results);
@@ -253,7 +251,7 @@ function numberWithCommas(x) {
         })
         .catch(err => console.log("Error block in Clans = ", err));
     }
-    
+   
 </script>
 
 
@@ -287,6 +285,7 @@ function numberWithCommas(x) {
 <script src="https://lendingteamutk.herokuapp.com/assets/plugins/datatables/dataTables.responsive.min.js"  ></script>
 <script src="https://lendingteamutk.herokuapp.com/assets/plugins/datatables/responsive.bootstrap.min.js"  ></script>
 <script src="https://lendingteamutk.herokuapp.com/assets/plugins/datatables/dataTables.scroller.min.js"  ></script>
+
 
 
  </div>
