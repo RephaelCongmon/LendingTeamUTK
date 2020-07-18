@@ -1,39 +1,61 @@
-let scooterData = require('./JsonScooterData.js')
-
 function generateLatLong() {
-    // let subStr = (scooterData[3].geometry).substring(13, (scooterData[3].geometry).length - 2)
-    // let geometryLines = (subStr).split(" ")
-    // let geometryNumbers = []
-
-    // geometryLines.forEach(coordinate => {
-    //     coordinate = coordinate.replace(',', '')
-    //     geometryNumbers.push(parseFloat(coordinate))
-    // })
-
+    
     let tripArray = []
 
-    scooterData.forEach(trip => {
+    window.testData.forEach(trip => {
 
         let geometryNumbers = []
         let subStr = (trip.geometry).substring(12, (trip.geometry).length - 2)
         let geometryLines = (subStr).split(" ")
-    
+
+        
         geometryLines.forEach(coordinate => {
             coordinate = coordinate.replace(',', '')
             geometryNumbers.push(parseFloat(coordinate))
         })
         tripArray.push(geometryNumbers)
     });
-    console.log(tripArray[0])
+
+    return tripArray
 }
 
-generateLatLong()
 function initMap() {
-    // The location of Uluru
+    // The location of Knoxville
     var knox = {lat: 35.964668, lng: -83.926453};
-    // The map, centered at Uluru
+    var tripArray = generateLatLong()
+
+    var heatmapData = []
+    
+    tripArray.forEach(trip => {
+        let lat
+        let long
+        for(var i = 0; i < trip.length; i++){  
+            if(i%2 === 0) {
+                lat = trip[i]
+            } else {
+                long = trip[i]
+                heatmapData.push(new google.maps.LatLng(lat, long))
+            }
+        }
+    })
+
+    // console.log(heatmapData)
     var map = new google.maps.Map(
-        document.getElementById('map'), {zoom: 15, center: knox});
-    // The marker, positioned at Uluru
-    var marker = new google.maps.Marker({position: knox, map: map});
-  }
+        document.getElementById('map'), {
+            zoom: 15, 
+            center: knox,
+            //mapTypeId: 'satellite'
+        }
+    );
+
+    var heatmap = new google.maps.visualization.HeatmapLayer({
+        data: heatmapData
+      });
+
+     heatmap.setMap(map);
+     heatmap.set("radius", heatmap.get("radius") ? null : 7)
+     heatmap.set("opacity", false)
+    
+    // var marker = new google.maps.Marker({position: knox, map: map});
+
+}
