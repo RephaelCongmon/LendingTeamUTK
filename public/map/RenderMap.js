@@ -1,11 +1,9 @@
 
-let scooterData = require('./JsonScooterData.json')
-
 function generateLatLong() {
     
     let tripArray = []
 
-    scooterData.forEach(trip => {
+    window.testData.forEach(trip => {
 
         let geometryNumbers = []
         let subStr = (trip.geometry).substring(12, (trip.geometry).length - 2)
@@ -23,21 +21,109 @@ function generateLatLong() {
 function initMap() {
     // The location of Knoxville
     var knox = {lat: 35.964668, lng: -83.926453};
-    var tripArray = setTimeout(generateLatLong(),100)
+    var tripArray = generateLatLong()
 
-    var heatmapData = [new google.maps.LatLng(35.96, -83.92)]
+    var heatmapData = []
+    
     tripArray.forEach(trip => {
-        trip.forEach(coordinate, index => {
-            console.log(index)
-            heatmapData.push()
-        })
+        let lat
+        let long
+        for(var i = 0; i < trip.length; i++){  
+            if(i%2 === 0) {
+                lat = trip[i]
+            } else {
+                long = trip[i]
+                heatmapData.push(new google.maps.LatLng(lat, long))
+            }
+        }
     })
 
+    // console.log(heatmapData)
     var map = new google.maps.Map(
         document.getElementById('map'), {
             zoom: 15, 
             center: knox,
             //mapTypeId: 'satellite'
+            styles: [
+                { elementType: "geometry", stylers: [{ color: "#242f3e" }] },
+                { elementType: "labels.text.stroke", stylers: [{ color: "#242f3e" }] },
+                { elementType: "labels.text.fill", stylers: [{ color: "#746855" }] },
+                {
+                  featureType: "administrative.locality",
+                  elementType: "labels.text.fill",
+                  stylers: [{ color: "#d59563" }]
+                },
+                {
+                  featureType: "poi",
+                  elementType: "labels.text.fill",
+                  stylers: [{ color: "#d59563" }]
+                },
+                {
+                  featureType: "poi.park",
+                  elementType: "geometry",
+                  stylers: [{ color: "#263c3f" }]
+                },
+                {
+                  featureType: "poi.park",
+                  elementType: "labels.text.fill",
+                  stylers: [{ color: "#6b9a76" }]
+                },
+                {
+                  featureType: "road",
+                  elementType: "geometry",
+                  stylers: [{ color: "#38414e" }]
+                },
+                {
+                  featureType: "road",
+                  elementType: "geometry.stroke",
+                  stylers: [{ color: "#212a37" }]
+                },
+                {
+                  featureType: "road",
+                  elementType: "labels.text.fill",
+                  stylers: [{ color: "#9ca5b3" }]
+                },
+                {
+                  featureType: "road.highway",
+                  elementType: "geometry",
+                  stylers: [{ color: "#746855" }]
+                },
+                {
+                  featureType: "road.highway",
+                  elementType: "geometry.stroke",
+                  stylers: [{ color: "#1f2835" }]
+                },
+                {
+                  featureType: "road.highway",
+                  elementType: "labels.text.fill",
+                  stylers: [{ color: "#f3d19c" }]
+                },
+                {
+                  featureType: "transit",
+                  elementType: "geometry",
+                  stylers: [{ color: "#2f3948" }]
+                },
+                {
+                  featureType: "transit.station",
+                  elementType: "labels.text.fill",
+                  stylers: [{ color: "#d59563" }]
+                },
+                {
+                  featureType: "water",
+                  elementType: "geometry",
+                  stylers: [{ color: "#17263c" }]
+                },
+                {
+                  featureType: "water",
+                  elementType: "labels.text.fill",
+                  stylers: [{ color: "#515c6d" }]
+                },
+                {
+                  featureType: "water",
+                  elementType: "labels.text.stroke",
+                  stylers: [{ color: "#17263c" }]
+                }
+              ]
         }
     );
 
@@ -46,7 +132,9 @@ function initMap() {
       });
 
      heatmap.setMap(map);
+     heatmap.set("radius", heatmap.get("radius") ? null : 7)
+     heatmap.set("opacity", false)
     
-    var marker = new google.maps.Marker({position: knox, map: map});
+    // var marker = new google.maps.Marker({position: knox, map: map});
 
 }
