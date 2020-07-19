@@ -7,6 +7,7 @@ function generateLatLong() {
         let geometryNumbers = []
         let subStr = (trip.geometry).substring(12, (trip.geometry).length - 2)
         let geometryLines = (subStr).split(" ")
+
         
         geometryLines.forEach(coordinate => {
             coordinate = coordinate.replace(',', '')
@@ -18,14 +19,35 @@ function generateLatLong() {
     return tripArray
 }
 
+function findStop() {
+    
+    let tripArray = []
+
+    window.randomData.forEach(trip => {
+        tripArray.push(trip.end_lat)
+        tripArray.push(trip.end_lon)
+    });
+    console.log('trip array --------', tripArray)
+    return tripArray
+}
+
+
 function initMap() {
     // The location of Knoxville
     var knox = {lat: 35.964668, lng: -83.926453};
     var tripArray = generateLatLong()
-    console.log(tripArray);
 
     var heatmapData = []
-    
+        
+    // for (let i = 0; i < tripArray.length; i++) {
+
+    //     if(i%2 === 0) {
+    //         lat = tripArray[i]
+    //     } else {
+    //         long = tripArray[i]
+    //         heatmapData.push(new google.maps.LatLng(lat, long))
+    //     }
+    // }
     tripArray.forEach(trip => {
         let lat
         let long
@@ -39,7 +61,6 @@ function initMap() {
         }
     })
 
-    // console.log(heatmapData)
     var map = new google.maps.Map(
         document.getElementById('map'), {
             zoom: 15, 
@@ -53,10 +74,9 @@ function initMap() {
       });
 
      heatmap.setMap(map);
-     heatmap.set("radius", heatmap.get("radius") ? null : 5)
-     heatmap.set("opacity", false)
+     heatmap.set("radius", heatmap.get("radius") ? null : 7)
+     heatmap.set("opacity", true)
     
     // var marker = new google.maps.Marker({position: knox, map: map});
 
-    console.log('finished processing')
 }
