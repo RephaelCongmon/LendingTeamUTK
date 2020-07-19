@@ -182,6 +182,7 @@
         //             document.querySelector('#leaderboardClass').innerHTML = '' + str;
 
 
+        
         //         var timeSpentInGameString = timeStringFunction(timeSpentInGame);
 
         //         document.querySelector('#hiddenSearchBar').style.display = "flex";
