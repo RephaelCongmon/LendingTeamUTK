@@ -38,6 +38,7 @@ function initMap() {
     var tripArray = findStop()
 
     var heatmapData = []
+    var markers = []
     // tripArray.forEach(trip => {
     //     let lat
     //     let long
@@ -66,9 +67,14 @@ function initMap() {
         } else {
             long = tripArray[i]
             var pos = {lat: lat, lng: long};
-            var marker = new google.maps.Marker({position: pos, map: map});
+            var marker = new google.maps.Marker({position: pos});
+            markers.push(marker)
         }
     }
+
+    var markerCluster = new MarkerClusterer(map, markers,
+        {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
+    console.log(markerCluster)
 
     // var heatmap = new google.maps.visualization.HeatmapLayer({
     //     data: heatmapData
