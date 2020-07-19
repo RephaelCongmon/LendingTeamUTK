@@ -4,12 +4,12 @@ The inspiration for this application stems from the use of the team's frequent u
 
 ## What it does
 ScootLib comes with the feature to display scooter transit routes via a heat map as well as a feature to view clusters of endpoints that display areas of high-volume destinations. Conclusions that can be drawn from the maps include:
-What routes do knoxvillians enjoy scooting the most
-What routes are dead spots for scooter traffic and why that might be
-What areas could we implement more for scooter safety
-Mappings to solve issues of scooter parking locations
-Points of interest that contain high scooter traffic
-Area where scooters should likely be moved to for optimal use
+- What routes do knoxvillians enjoy scooting the most
+- What routes are dead spots for scooter traffic and why that might be
+- What areas could we implement more for scooter safety
+- Mappings to solve issues of scooter parking locations
+- Points of interest that contain high scooter traffic
+- Area where scooters should likely be moved to for optimal use
 
 
 ## How we built it
