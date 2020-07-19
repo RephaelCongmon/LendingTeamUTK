@@ -13,7 +13,7 @@ ScootLib comes with the feature to display scooter transit routes via a heat map
 
 
 ## How we built it
-Heroku -> Node.js + Express.js -> Map API’s -> Website (HTML, CSS, JavaScript) 
+Heroku -> Node.js + Express.js -> Map API’s -> Website (HTML, CSS, JavaScript).
 To host the website for free, we used Heroku to service a web app. We decided on Heroku because Heroku provided many out-of-the-box solutions and also has the capability for full-stack development with Node.js.  For the frontend, we decided to use Twitter Bootstrap for ready-to-use CSS classes. For the backend we used express.js to help communicate with our backend to provide database accessibility. Lastly, we used the Google Web API paired with the given Knoxville Dataset to help populate and provide meaningful information to our web application.
 
 ## Challenges we ran into
