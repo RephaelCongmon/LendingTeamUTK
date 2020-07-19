@@ -1,4 +1,11 @@
 # ScootLib
+
+### Team Members:
+- Tyler Nguyen
+- Rephael Congmon
+- Abhi Ravi
+- Kishan Tailor
+
 ## Inspiration
 The inspiration for this application stems from the use of the team's frequent use of scooters. We had many problems with our commutes as well as finding adequate parking areas due to restricted infrastructure. We hope that this application can help the City of Knoxville direct their efforts in helping those who frequent the use of scooters in the Scruffy City.
 
