@@ -975,6 +975,7 @@
 			oSettings.oInit  = oInit;
 			
 			allSettings.push( oSettings );
+		
 			
 			// Need to add the instance after the instance after the settings object has been added
 			// to the settings array, so we can self reference the table instance if more than one
