@@ -1,10 +1,10 @@
 # ScootLib
 
 ### Team Members:
-- Tyler Nguyen
-- Rephael Congmon
-- Abhi Ravi
-- Kishan Tailor
+- [Tyler Nguyen](https://github.com/tnguye69)
+- [Rephael Congmon](https://github.com/RephaelCongmon)
+- [Abhi Ravi](https://github.com/Abhi-Ravi)
+- [Kishan Tailor](https://github.com/Ktailor34)
 
 ## Inspiration
 The inspiration for this application stems from the use of the team's frequent use of scooters. We had many problems with our commutes as well as finding adequate parking areas due to restricted infrastructure. We hope that this application can help the City of Knoxville direct their efforts in helping those who frequent the use of scooters in the Scruffy City.
