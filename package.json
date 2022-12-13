@@ -5,7 +5,7 @@
   "main": "scripts.js",
   "dependencies": {
     "brawlhalla-api": "^4.0.5",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "express-validator": "^6.1.1",
     "mdbootstrap": "^4.14.1",
     "node-fetch": "^2.6.0",
